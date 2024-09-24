@@ -1,0 +1,1398 @@
+/* Import Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Reset margins, padding, and box-sizing for all elements */
+
+
+/* 
+  Universal Selector (*) 
+  This selector applies to all elements on the page. 
+  The following properties will reset default styles 
+  and apply consistent styling across all elements.
+*/
+
+* {
+    margin: 0;
+    /* Remove default margin from all elements */
+    padding: 0;
+    /* Remove default padding from all elements */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+    font-family: "Spartan", sans-serif;
+    /* Set the default font family to 'Spartan' with 'sans-serif' as a fallback */
+}
+
+
+/* Enable smooth scrolling for the HTML document */
+
+
+/* 
+  HTML Element Selector 
+  This selector applies styles to the root HTML element.
+  The following property will enable smooth scrolling behavior for the entire page.
+*/
+
+html {
+    scroll-behavior: smooth;
+    /* Enable smooth scrolling for the page when using anchor links or scrolling via JavaScript */
+}
+
+
+/* Global Styles */
+
+
+/* Styling for h1 tags - larger font size and color */
+
+
+/* 
+  h1 Element Selector 
+  This selector applies styles to all h1 elements.
+  The font size, line height, and text color are specified.
+*/
+
+h1 {
+    font-size: 40px;
+    /* Set the font size to 40 pixels */
+    line-height: 50px;
+    /* Set the line height to 50 pixels for better readability */
+    color: #222;
+    /* Set the text color to a dark gray (hex code #222) */
+}
+
+
+/* Styling for h2 tags - medium font size and color */
+
+
+/* 
+  h2 Element Selector 
+  This selector applies styles to all h2 elements.
+  The font size, line height, and text color are specified.
+*/
+
+h2 {
+    font-size: 30px;
+    /* Set the font size to 30 pixels */
+    line-height: 30px;
+    /* Set the line height to 30 pixels for better readability */
+    color: #222;
+    /* Set the text color to a dark gray (hex code #222) */
+}
+
+
+/* Styling for h4 tags - smaller font size and color */
+
+
+/*
+  h4 Element Selector
+  This selector applies styles to all h4 elements.
+  The font size and text color are specified.
+*/
+
+h4 {
+    font-size: 15px;
+    /* Set the font size to 15 pixels */
+    color: #222;
+    /* Set the text color to a dark gray (hex code #222) */
+}
+
+
+/* Styling for h6 tags - bold font weight and small font size */
+
+
+/*
+  h6 Element Selector
+  This selector applies styles to all h6 elements.
+  The font weight and font size are specified.
+*/
+
+h6 {
+    font-weight: 700;
+    /* Set the font weight to 700, which makes the text bold */
+    font-size: 12px;
+    /* Set the font size to 12 pixels */
+}
+
+
+/* Styling for paragraph tags - standard font size and color, with margin */
+
+
+/*
+  p Element Selector
+  This selector applies styles to all paragraph (p) elements.
+  The font size, text color, and margin are specified.
+*/
+
+p {
+    font-size: 16px;
+    /* Set the font size to 16 pixels */
+    color: #465b52;
+    /* Set the text color to a dark shade of gray (#465b52) */
+    margin: 15px 0 20px 0;
+    /* Set the margin: 15px top, 0px right, 20px bottom, and 0px left */
+}
+
+
+/* Padding for sections with class section-p1 */
+
+
+/*
+  .section-p1 Class Selector
+  This selector applies styles to elements with the class "section-p1".
+  The padding is specified to provide space inside the element.
+*/
+
+.section-p1 {
+    padding: 40px 80px;
+    /* Set the padding: 40px on top and bottom, 80px on left and right */
+}
+
+
+/* Margin for sections with class section-m1 */
+
+
+/*
+  .section-m1 Class Selector
+  This selector applies styles to elements with the class "section-m1".
+  The margin is specified to provide space outside the element.
+*/
+
+.section-m1 {
+    margin: 40px 0;
+    /* Set the margin: 40px on top and bottom, 0 on left and right */
+}
+
+button.normal {
+    font-size: 14px;
+    /* Sets the font size of the button text to 14px */
+    font-weight: 600;
+    /* Sets the font weight of the button text to 600, making it semi-bold */
+    padding: 15px 30px;
+    /* Adds 15px of padding vertically and 30px of padding horizontally inside the button */
+    color: #000;
+    /* Sets the text color to black (#000) */
+    background-color: #fff;
+    /* Sets the background color to white (#fff) */
+    border-radius: 4px;
+    /* Rounds the corners of the button with a radius of 4px */
+    cursor: pointer;
+    /* Changes the cursor to a pointer (hand icon) when hovering over the button */
+    border: none;
+    /* Removes any border from the button */
+    outline: none;
+    /* Removes the default outline from the button */
+    transition: 0.2s;
+    /* Adds a smooth transition effect for 0.2 seconds when the button's properties change */
+}
+
+button.white {
+    font-size: 13px;
+    /* Sets the font size of the button text to 13px */
+    font-weight: 600;
+    /* Sets the font weight of the button text to 600, making it semi-bold */
+    padding: 11px 18px;
+    /* Adds 11px of padding vertically and 18px of padding horizontally inside the button */
+    color: white;
+    /* Sets the text color to white */
+    background-color: transparent;
+    /* Sets the background color to be fully transparent */
+    cursor: pointer;
+    /* Changes the cursor to a pointer (hand icon) when hovering over the button */
+    border: 1px solid white;
+    /* Creates a 1px solid white border around the element */
+    outline: none;
+    /* Removes the default outline from the button */
+    transition: 0.2s;
+    /* Adds a smooth transition effect for 0.2 seconds when the button's properties change */
+}
+
+
+/* Full width for body */
+
+
+/*
+  body Selector
+  Styles applied to the entire body of the HTML document.
+  Sets the width of the body to 100% of the viewport width.
+*/
+
+body {
+    width: 100%;
+    /* Ensures the body takes up the full width of the viewport */
+}
+
+
+/* Header styling - flex container with padding and background color */
+
+
+/*
+  #header Selector
+  Styles applied to the header section of the webpage.
+*/
+
+#header {
+    display: flex;
+    /* Enables flexbox layout for header content */
+    align-items: center;
+    /* Centers items vertically within the header */
+    justify-content: space-between;
+    /* Distributes items evenly with space in between */
+    padding: 20px 80px;
+    /* Padding inside the header (top/bottom: 20px, left/right: 80px) */
+    background-color: #E3E6F3;
+    /* Background color of the header */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    /* Adds a subtle shadow effect */
+    z-index: 999;
+    /* Ensures the header stays above other elements */
+    position: sticky;
+    /* Makes the header stick to the top of the viewport */
+    top: 0;
+    /* Positions the header at the top of the viewport */
+    left: 0;
+    /* Positions the header at the left of the viewport */
+}
+
+
+/* Navbar styling - flex container */
+
+
+/*
+  #navbar Selector
+  Styles applied to the navigation bar (navbar) section.
+*/
+
+#navbar {
+    display: flex;
+    /* Enables flexbox layout for navbar content */
+    align-items: center;
+    /* Centers items vertically within the navbar */
+    justify-content: center;
+    /* Centers items horizontally within the navbar */
+}
+
+
+/* Navbar list items styling - removing list style and adding padding */
+
+
+/*
+  #navbar li Selector
+  Styles applied to each list item (li) within the navbar.
+*/
+
+#navbar li {
+    list-style: none;
+    /* Removes default list item bullet */
+    padding: 0 20px;
+    /* Adds horizontal spacing around each navbar item */
+    position: relative;
+    /* Allows for positioning of pseudo-elements */
+}
+
+
+/* Navbar links styling - text decoration, font size, font weight, and color */
+
+
+/*
+  #navbar li a Selector
+  Styles applied to anchor (a) tags within list items (li) in the navbar.
+*/
+
+#navbar li a {
+    text-decoration: none;
+    /* Removes default underline from links */
+    font-size: 16px;
+    /* Sets the font size of the navbar links */
+    font-weight: 600;
+    /* Sets the font weight to semi-bold */
+    color: #1a1a1a;
+    /* Sets the text color of the links */
+    transition: 0.3s ease;
+    /* Adds a smooth transition effect */
+}
+
+
+/* Navbar links hover and active state styling - color change */
+
+
+/*
+  #navbar li a:hover,
+  #navbar li a.active Selector
+  Styles applied to anchor (a) tags within list items (li) in the navbar
+  when hovered over or when active.
+*/
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #FF1493;
+    /* Changes text color to deep hot pink when hovered or active */
+}
+
+
+/* Navbar links underline on hover and active state */
+
+
+/*
+  #navbar li a.active::after,
+  #navbar li a:hover::after Selector
+  Styles applied to pseudo-element ::after of anchor (a) tags within list items (li) in the navbar
+  when they are active or hovered over.
+*/
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    /* Inserts an empty content */
+    width: 30%;
+    /* Sets the width of the pseudo-element */
+    height: 2px;
+    /* Sets the height of the pseudo-element */
+    background: #FF1493;
+    /* Sets the background color of the pseudo-element */
+    position: absolute;
+    /* Positions the pseudo-element absolutely relative to its parent */
+    bottom: -4px;
+    /* Positions the pseudo-element 4 pixels above the bottom of its parent */
+    left: 20px;
+    /* Positions the pseudo-element 20 pixels from the left edge of its parent */
+}
+
+#mobile {
+    /* Initially hides the #mobile element */
+    display: none;
+    /* Aligns items to the center when the #mobile element is displayed as a flex container */
+    align-items: center;
+}
+
+#close {
+    /* Hides the #close element */
+    display: none;
+}
+
+
+/* Home Page */
+
+
+/* Display section styling - background image, size, position, and padding */
+
+
+/*
+  #disp Selector
+  Styles applied to the element with id 'disp', typically used for a display section.
+*/
+
+#disp {
+    background-image: url("images/disp2.jpg");
+    /* Sets the background image */
+    height: 90vh;
+    /* Sets the height to 90% of the viewport height */
+    width: 100%;
+    /* Sets the width to 100% of its container */
+    background-size: cover;
+    /* Ensures the background image covers the entire element */
+    background-position: right center;
+    /* Positions the background image to the right and center */
+    background-repeat: no-repeat;
+    /* Prevents the background image from repeating */
+    padding: 0 80px;
+    /* Adds padding of 0 on top and bottom, 80 pixels on left and right */
+    display: flex;
+    /* Displays the element as a flex container */
+    flex-direction: column;
+    /* Arranges flex items in a column */
+    align-items: flex-start;
+    /* Aligns flex items to the start of the cross axis */
+    justify-content: center;
+    /* Centers flex items along the main axis */
+    position: relative;
+    /* Positions the element relative to its normal position */
+    z-index: 1;
+    /* Sets the stacking order of the element */
+}
+
+
+/* Display section background overlay */
+
+
+/*
+  #disp::before Selector
+  Creates a pseudo-element before the #disp element, often used for background overlays.
+*/
+
+#disp::before {
+    content: "";
+    /* Generates content for the pseudo-element */
+    position: absolute;
+    /* Positions the pseudo-element relative to its nearest positioned ancestor */
+    top: 0;
+    /* Aligns the top edge of the pseudo-element with its containing block */
+    left: 0;
+    /* Aligns the left edge of the pseudo-element with its containing block */
+    width: 100%;
+    /* Sets the width to 100% of its containing block */
+    height: 100%;
+    /* Sets the height to 100% of its containing block */
+    background-color: #E3E6F3;
+    /* Sets the background color of the pseudo-element */
+    opacity: 0.8;
+    /* Sets the transparency level of the pseudo-element */
+    z-index: -1;
+    /* Sets the stacking order of the pseudo-element behind its parent (#disp) */
+}
+
+
+/* Display section h4 styling - padding and color */
+
+
+/*
+  #disp h4 Selector
+  Styles applied to h4 elements within the #disp container.
+*/
+
+#disp h4 {
+    padding-bottom: 15px;
+    /* Adds padding below the h4 element */
+    color: #1a1a1a;
+    /* Sets the text color of the h4 element to a dark gray */
+}
+
+
+/* Display section h1 styling - color */
+
+
+/*
+  #disp h1 Selector
+  Styles applied to h1 elements within the #disp container.
+*/
+
+#disp h1 {
+    color: #FF1493;
+    /* Sets the text color of h1 elements to a deep hot pink*/
+}
+
+
+/* Display section button styling - background image, color, border, padding, and cursor */
+
+
+/*
+  #disp button Selector
+  Styles applied to button elements within the #disp container.
+*/
+
+#disp button {
+    background-image: url("images/button.png");
+    /* Sets a background image for the button */
+    background-color: transparent;
+    /* Makes the background color of the button transparent */
+    color: #FF1493;
+    /* Sets the text color of the button to deep hot pink */
+    border: 0;
+    /* Removes any border around the button */
+    padding: 14px 80px 14px 65px;
+    /* Specifies the padding inside the button */
+    background-repeat: no-repeat;
+    /* Ensures the background image does not repeat */
+    cursor: pointer;
+    /* Changes the cursor to a pointer when hovering over the button */
+    font-size: 15px;
+    /* Sets the font size of the button text */
+    font-weight: 700;
+    /* Sets the font weight (boldness) of the button text */
+}
+
+
+/* Feature section styling - flex container */
+
+
+/*
+  #feature Selector
+  Styles applied to the #feature container.
+*/
+
+#feature {
+    display: flex;
+    /* Displays children elements in a flex container */
+    align-items: center;
+    /* Aligns items along the cross-axis (vertical centering here) */
+    justify-content: space-between;
+    /* Distributes items evenly with space between them */
+    flex-wrap: wrap;
+    /* Allows items to wrap onto multiple lines if necessary */
+}
+
+
+/* Feature box styling - dimensions, text alignment, padding, box shadow, border, and margin */
+
+
+/*
+  #feature .fe-box Selector
+  Styles applied to each feature box within the #feature container.
+*/
+
+#feature .fe-box {
+    width: 180px;
+    /* Sets a fixed width for each feature box */
+    text-align: center;
+    /* Centers text horizontally within each box */
+    padding: 25px 15px;
+    /* Padding inside each feature box */
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    /* Adds a subtle box shadow */
+    border: 1px solid #cce7d0;
+    /* Adds a border with a light green color */
+    border-radius: 4px;
+    /* Rounds the corners of each feature box */
+    margin: 15px 0;
+    /* Sets margin above and below each feature box */
+}
+
+
+/* Feature box hover effect - box shadow */
+
+
+/*
+  #feature .fe-box:hover Selector
+  Styles applied to each feature box when hovered over within the #feature container.
+*/
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+    /* Changes the box shadow on hover to create a lifting effect */
+}
+
+
+/* Feature box image styling - width and margin */
+
+
+/*
+  #feature .fe-box img Selector
+  Styles applied to images within each feature box in the #feature container.
+*/
+
+#feature .fe-box img {
+    width: 100%;
+    /* Ensures the image fills its container */
+    margin-bottom: 10px;
+    /* Adds space below the image */
+}
+
+
+/* Feature box h6 styling - inline block, padding, line height, border radius, and color */
+
+
+/*
+  #feature .fe-box h6 Selector
+  Styles applied to the h6 headings within each feature box in the #feature container.
+*/
+
+#feature .fe-box h6 {
+    display: inline-block;
+    /* Displays the heading as an inline-block element */
+    padding: 9px 8px 6px 8px;
+    /* Sets padding inside the heading */
+    line-height: 1;
+    /* Ensures normal line height */
+    border-radius: 4px;
+    /* Adds rounded corners to the heading */
+    color: #FF1493;
+    /* Sets the text color */
+}
+
+
+/* Specific background colors for different feature boxes */
+
+
+/*
+  #feature .fe-box:nth-child(2) h6 Selector
+  Background color for the h6 heading in the second feature box.
+*/
+
+#feature .fe-box:nth-child(2) h6 {
+    background-color: #cdebbc;
+    /* Light green background */
+}
+
+
+/*
+  #feature .fe-box:nth-child(3) h6 Selector
+  Background color for the h6 heading in the third feature box.
+*/
+
+#feature .fe-box:nth-child(3) h6 {
+    background-color: #d1e8f2;
+    /* Light blue background */
+}
+
+
+/*
+  #feature .fe-box:nth-child(4) h6 Selector
+  Background color for the h6 heading in the fourth feature box.
+*/
+
+#feature .fe-box:nth-child(4) h6 {
+    background-color: #cdd4f8;
+    /* Light purple background */
+}
+
+
+/*
+  #feature .fe-box:nth-child(5) h6 Selector
+  Background color for the h6 heading in the fifth feature box.
+*/
+
+#feature .fe-box:nth-child(5) h6 {
+    background-color: #f6dbf6;
+    /* Light pink background */
+}
+
+
+/*
+  #feature .fe-box:nth-child(6) h6 Selector
+  Background color for the h6 heading in the sixth feature box.
+*/
+
+#feature .fe-box:nth-child(6) h6 {
+    background-color: #fff2e5;
+    /* Light peach background */
+}
+
+
+/* Product section styling - text alignment */
+
+
+/*
+  #product1 Selector
+  Center aligns all content within the #product1 section.
+*/
+
+#product1 {
+    text-align: center;
+}
+
+
+/* Product container styling - flex container with padding and wrap */
+
+#product1 .pro-container {
+    display: flex;
+    /* Establishes flex container for product items */
+    justify-content: space-between;
+    /* Distributes items evenly with space between */
+    padding: 20px;
+    /* Adds padding around the container */
+    flex-wrap: wrap;
+    /* Allows items to wrap onto new lines */
+}
+
+
+/* Product card styling - dimensions, padding, border, cursor, box shadow, margin, transition, and position */
+
+#product1 .pro {
+    width: 23%;
+    /* Adjust width to fit 4 cards per row with some spacing */
+    min-width: 150px;
+    /* Minimum width for flexibility */
+    padding: 10px 12px;
+    /* Padding inside each card */
+    border: 1px solid #cce7d0;
+    /* Border around each card */
+    border-radius: 25px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Cursor style */
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    /* Box shadow for depth */
+    margin: 15px 0;
+    /* Vertical margin between cards */
+    transition: 0.2s ease;
+    /* Smooth transition on hover */
+    position: relative;
+    /* Positioning context */
+    display: flex;
+    /* Flexbox layout for easier alignment */
+    flex-direction: column;
+    /* Stack children vertically */
+    align-items: center;
+    /* Center children horizontally */
+    padding-bottom: 60px;
+    /* Adds padding at the bottom to ensure there's space for the .des div */
+}
+
+
+/* Product card hover effect - box shadow */
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    /* Adds a box shadow effect on hover */
+}
+
+
+/* Product card image styling - width and border radius */
+
+#product1 .pro img {
+    width: 60%;
+    /* Ensures the image fills its container */
+    border-radius: 15px;
+    /* Applies a rounded corner effect to the image */
+    margin-bottom: 60px;
+    /* Adds space below the image to avoid collision with the .des div */
+}
+
+
+/* Product description styling - text alignment and padding */
+
+#product1 .pro .des {
+    position: absolute;
+    /* Allows .des to be positioned absolutely within the .pro container */
+    bottom: 10px;
+    /* Positions .des 10px from the bottom of the .pro container */
+    left: 10px;
+    /* Positions .des 10px from the left side of the .pro container */
+    text-align: start;
+    /* Aligns text to the start (left) */
+    padding: 10px;
+    /* Adds padding around the text */
+    width: calc(100% - 20px);
+    /* Ensures the .des div takes the full width of the .pro container minus padding */
+    background: rgba(255, 255, 255, 0.8);
+    /* Adds a semi-transparent background to make the text readable */
+    box-sizing: border-box;
+    /* Includes padding in the element's total width and height */
+    border-radius: 5px;
+    /* Adds rounded corners to the .des div */
+}
+
+
+/* Product brand styling - color and font size */
+
+#product1 .pro .des span {
+    color: #606063;
+    /* Sets the text color to a dark gray */
+    font-size: 12px;
+    /* Sets the font size to 12 pixels */
+}
+
+
+/* Product name styling - padding, color, and font size */
+
+#product1 .pro .des h5 {
+    padding-top: 5px;
+    /* Adds 5 pixels of padding above the element */
+    color: #1a1a1a;
+    /* Sets the text color to a dark gray */
+    font-size: 14px;
+    /* Sets the font size to 14 pixels */
+}
+
+
+/* Product star rating icon styling - font size and color */
+
+#product1 .pro .des i {
+    font-size: 12px;
+    /* Sets the font size to 12 pixels */
+    color: rgb(243, 181, 25);
+    /* Sets the text color using RGB values */
+}
+
+
+/* Product price styling - padding, font size, font weight, and color */
+
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    /* Adds padding above the heading */
+    font-size: 15px;
+    /* Sets the font size to 15 pixels */
+    font-weight: 700;
+    /* Sets the font weight to bold */
+    color: #FF1493;
+    /* Sets the text color using hex code */
+}
+
+
+/* Shopping cart icon styling - dimensions, line height, border radius, background color, font weight, color, border, position */
+
+#product1 .pro .cart {
+    width: 40px;
+    /* Sets the width of the cart icon */
+    height: 40px;
+    /* Sets the height of the cart icon */
+    line-height: 40px;
+    /* Centers the content vertically within the cart */
+    border-radius: 50px;
+    /* Rounds the corners of the cart icon */
+    background-color: #e8f6ea;
+    /* Sets the background color of the cart icon */
+    font-weight: 500;
+    /* Sets the font weight of the text inside the cart */
+    color: #088178;
+    /* Sets the color of the text inside the cart */
+    border: 1px solid #cce7d0;
+    /* Sets a border around the cart icon */
+    position: absolute;
+    /* Positions the cart icon absolutely within its container */
+    bottom: 20px;
+    /* Places the cart icon 20 pixels from the bottom of its container */
+    right: 10px;
+    /* Places the cart icon 10 pixels from the right edge of its container */
+}
+
+#banner {
+    display: flex;
+    /* Use flexbox layout for the banner */
+    flex-direction: column;
+    /* Arrange children in a column (vertical) layout */
+    justify-content: center;
+    /* Center the children vertically */
+    align-items: center;
+    /* Center the children horizontally */
+    text-align: center;
+    /* Center-align text within the banner */
+    background-image: url("images/banner/b4.jpg");
+    /* Set a background image for the banner */
+    width: 100%;
+    /* Make the banner span the full width of its container */
+    height: 25vh;
+    /* Set the height of the banner to 40% of the viewport height */
+    background-size: cover;
+    /* Ensure the background image covers the entire banner */
+    background-position: center;
+    /* Center the background image within the banner */
+}
+
+#banner h4 {
+    color: white;
+    /* Set the text color to white for h4 element */
+    font-size: 16px;
+    /* Set the font size of the h4 element to 16px */
+}
+
+#banner h2 {
+    color: white;
+    /* Set the text color to white for h2 element */
+    font-size: 30px;
+    /* Set the font size of the h2 element to 30px */
+    padding: 10px 0;
+    /* Add 10px padding above and below the h2 element */
+}
+
+#banner h2 span {
+    color: rgb(240, 182, 22);
+    /* Set the text color to a specific shade of yellow for the span inside h2 */
+}
+
+#banner button:hover {
+    background: #FF1493;
+    /* Change the background color of the button to hot pink when hovered */
+    color: white;
+    /* Change the text color of the button to white when hovered */
+}
+
+#sm-banner {
+    display: flex;
+    /* Uses flexbox for layout */
+    justify-content: space-between;
+    /* Distributes space between items, placing them at the start and end of the container */
+    flex-wrap: wrap;
+    /* Allows items to wrap onto multiple lines if necessary */
+}
+
+#sm-banner .banner-box {
+    display: flex;
+    /* Use flexbox layout for the banner */
+    flex-direction: column;
+    /* Arrange children in a column (vertical) layout */
+    justify-content: center;
+    /* Center the children vertically */
+    align-items: flex-start;
+    /* Aligns items to the start (left) of the cross axis (vertical axis for flex-direction: row or horizontal axis for flex-direction: column) */
+    background-image: url("images/banner/b11.jpg");
+    /* Set a background image for the banner */
+    min-width: 580px;
+    /* Sets the minimum width of the element to 580px, ensuring it does not shrink below this width */
+    height: 50vh;
+    /* Set the height of the banner to 50% of the viewport height */
+    background-size: cover;
+    /* Ensure the background image covers the entire banner */
+    background-position: center;
+    /* Center the background image within the banner */
+    padding: 30px;
+    /* Adds 30px of padding inside the element on all sides */
+}
+
+#sm-banner .banner-box2 {
+    background-image: url("images/banner/b12.jpg");
+    /* Set a background image for the banner */
+}
+
+#sm-banner h4 {
+    color: white;
+    /* Sets the text color to white */
+    font-size: 20px;
+    /* Sets the font size to 20px */
+    font-weight: 300;
+    /* Sets the font weight to 300, making it light */
+}
+
+#sm-banner h2 {
+    color: white;
+    /* Sets the text color to white */
+    font-size: 28px;
+    /* Sets the font size to 28px */
+    font-weight: 800;
+    /* Sets the font weight to 800, making it very bold */
+}
+
+#sm-banner span {
+    color: white;
+    /* Sets the text color to white */
+    font-size: 14px;
+    /* Sets the font size to 14px */
+    font-weight: 500;
+    /* Sets the font weight to 500, making it medium bold */
+    padding-bottom: 15px;
+    /* Adds 15px padding to the bottom */
+}
+
+#sm-banner .banner-box:hover button {
+    background: #FF1493;
+    /* Changes the background color of the button to hot pink when hovered */
+    border: 1px solid #FF1493;
+    /* Changes the border of the button to hot pink when hovered */
+}
+
+#banner3 {
+    display: flex;
+    /* Uses flexbox for layout */
+    justify-content: space-between;
+    /* Distributes space between child elements equally */
+    flex-wrap: wrap;
+    /* Allows child elements to wrap onto multiple lines */
+    padding: 0 80px;
+    /* Adds 80px padding to the left and right sides */
+}
+
+#banner3 .banner-box {
+    display: flex;
+    /* Use flexbox layout for the banner */
+    flex-direction: column;
+    /* Arrange children in a column (vertical) layout */
+    justify-content: center;
+    /* Center the children vertically */
+    align-items: flex-start;
+    /* Aligns items to the start (left) of the cross axis (vertical axis for flex-direction: row or horizontal axis for flex-direction: column) */
+    background-image: url("images/banner/b16.jpg");
+    /* Set a background image for the banner */
+    min-width: 30%;
+    /* Sets the minimum width of the element to 30%, ensuring it does not shrink below this width */
+    height: 30vh;
+    /* Set the height of the banner to 30% of the viewport height */
+    background-size: cover;
+    /* Ensure the background image covers the entire banner */
+    background-position: center;
+    /* Center the background image within the banner */
+    padding: 20px;
+    /* Adds 20px of padding inside the element on all sides */
+    margin-bottom: 20px;
+    /* Adds 20px of margin below the element */
+}
+
+#banner3 .banner-box2 {
+    background-image: url("images/banner/b21.jpg");
+    /* Set a background image for the banner */
+}
+
+#banner3 .banner-box3 {
+    background-image: url("images/banner/b18.jpg");
+    /* Set a background image for the banner */
+}
+
+#banner3 h2 {
+    color: #fff;
+    /* Sets the text color to white */
+    font-weight: 900;
+    /* Makes the text very bold */
+    font-size: 22px;
+    /* Sets the font size to 22px */
+}
+
+#banner3 h3 {
+    color: rgb(240, 182, 22);
+    /* Sets the text color to a specific shade of yellow */
+    font-weight: 800;
+    /* Makes the text bold */
+    font-size: 15px;
+    /* Sets the font size to 15px */
+}
+
+#newsletter {
+    display: flex;
+    /* Aligns child elements in a flex container */
+    justify-content: space-between;
+    /* Distributes space between child elements */
+    flex-wrap: wrap;
+    /* Allows child elements to wrap onto multiple lines if needed */
+    align-items: center;
+    /* Vertically centers child elements within the container */
+    background-image: url("images/banner/b16.jpg");
+    /* Sets a background image for the section */
+    background-repeat: no-repeat;
+    /* Prevents the background image from repeating */
+    background-position: 20% 30%;
+    /* Positions the background image at 20% from the left and 30% from the top */
+    background-color: #041e42;
+    /* Sets a fallback background color in case the image fails to load */
+}
+
+#newsletter h4 {
+    font-size: 22px;
+    /* Sets the font size of the heading to 22 pixels */
+    font-weight: 700;
+    /* Applies a bold font weight to the heading */
+    color: #fff;
+    /* Sets the text color to white */
+}
+
+#newsletter p {
+    font-size: 14px;
+    /* Sets the font size of the paragraph text to 14 pixels */
+    font-weight: 600;
+    /* Applies a semi-bold font weight to the paragraph text */
+    color: #818ea0;
+    /* Sets the text color to a light greyish-blue */
+}
+
+#newsletter p span {
+    color: rgb(240, 182, 22);
+    /* Sets the text color of <span> elements within <p> to a bright yellowish color */
+}
+
+#newsletter .form {
+    display: flex;
+    /* Enables a flex container for its child elements, aligning them horizontally by default */
+    width: 40%;
+    /* Sets the width of the form to 40% of its parent container */
+}
+
+#newsletter input {
+    height: 3.12rem;
+    /* Sets the height of the input field to 3.12 rem units */
+    padding: 0 1.2em;
+    /* Adds horizontal padding of 1.2em to the input field */
+    font-size: 14px;
+    /* Sets the font size of the input text to 14 pixels */
+    width: 100%;
+    /* Makes the input field span the full width of its container */
+    border: 1px solid transparent;
+    /* Sets a 1px solid border with a transparent color */
+    border-radius: 4px;
+    /* Rounds the corners of the input field with a radius of 4 pixels */
+    outline: none;
+    /* Removes the default outline that appears when the input is focused */
+    border-top-right-radius: 0;
+    /* Sets the top-right corner radius of the border to 0 (no rounding) */
+    border-bottom-right-radius: 0;
+    /* Sets the bottom-right corner radius of the border to 0 (no rounding) */
+}
+
+#newsletter button {
+    background-color: #088178;
+    /* Sets the background color of the button to a teal shade (#088178) */
+    color: #fff;
+    /* Sets the text color of the button to white (#fff) */
+    white-space: nowrap;
+    /* Prevents the button text from wrapping to the next line */
+    border-top-left-radius: 0;
+    /* Sets the top-left corner radius of the button border to 0 (no rounding) */
+    border-bottom-left-radius: 0;
+    /* Sets the bottom-left corner radius of the button border to 0 (no rounding) */
+}
+
+footer {
+    /* Use flexbox layout for the footer */
+    display: flex;
+    /* Allow flex items to wrap onto multiple lines if needed */
+    flex-wrap: wrap;
+    /* Distribute space between flex items evenly, with space between them */
+    justify-content: space-between;
+}
+
+footer .col {
+    /* Use flexbox layout for each column */
+    display: flex;
+    /* Arrange flex items in a vertical (column) direction */
+    flex-direction: column;
+    /* Align items to the start of the flex container (left-aligned) */
+    align-items: flex-start;
+    /* Add 20px margin at the bottom for spacing between columns */
+    margin-bottom: 20px;
+}
+
+footer .logo {
+    /* Adds a 30px margin below the logo for spacing */
+    margin-bottom: 30px;
+}
+
+footer h4 {
+    /* Sets the font size of the footer's <h4> headings to 14px */
+    font-size: 14px;
+    /* Adds 20px of padding at the bottom for spacing */
+    padding-bottom: 20px;
+}
+
+footer p {
+    /* Sets the font size of paragraphs in the footer to 13px */
+    font-size: 13px;
+    /* Removes margin on the top and sides, and sets an 8px margin at the bottom */
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    /* Sets the font size of links in the footer to 13px */
+    font-size: 13px;
+    /* Removes the underline from links */
+    text-decoration: none;
+    /* Sets the text color of links to a dark shade (#222) */
+    color: #222;
+    /* Adds a 10px margin at the bottom of each link for spacing */
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    /* Adds a 20px margin at the top of the .follow section for spacing */
+    margin-top: 20px;
+}
+
+footer .follow i {
+    /* Sets the color of icons in the .follow section to #465b52 (a greenish shade) */
+    color: #465b52;
+    /* Adds 4px of padding to the right of each icon for spacing */
+    padding-right: 4px;
+    /* Changes the cursor to a pointer when hovering over the icons */
+    cursor: pointer;
+}
+
+footer .install .row img {
+    /* Adds a 1px solid border around images in the .row of the .install section, with color #088178 */
+    border: 1px solid #088178;
+    /* Rounds the corners of the border with a 6px radius */
+    border-radius: 6px;
+}
+
+footer .install img {
+    /* Adds 10px margin at the top, 0 margin on the sides, and 15px margin at the bottom of images in the .install section */
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    /* Changes the text color to #088178 when hovering over icons in the .follow section or links in the footer */
+    color: #FF1493;
+}
+
+footer .copyright {
+    /* Sets the width of the .copyright section to 100% of its container */
+    width: 100%;
+    /* Centers the text horizontally within the .copyright section */
+    text-align: center;
+}
+
+
+/*Start Media Query*/
+
+
+/*Responsiveness for middle screen devices such as ipads*/
+
+@media (max-width: 799px) {
+    /* Style for the #navbar on screens 799px or smaller */
+    .section-p1 {
+        /* Adds padding of 40px to the top and bottom, and 40px to the left and right */
+        padding: 40px 40px;
+    }
+    #navbar {
+        /* Display as a flex container */
+        display: flex;
+        /* Stack items vertically */
+        flex-direction: column;
+        /* Align items to the start (left) */
+        align-items: flex-start;
+        /* Justify items to the start (top) */
+        justify-content: flex-start;
+        /* Fix the navbar to the side of the viewport */
+        position: fixed;
+        /* Position the navbar at the top */
+        top: 0;
+        /* Initially position the navbar off-screen to the right */
+        right: -300px;
+        /* Set the height to fill the viewport */
+        height: 100vh;
+        /* Set a width of 300px */
+        width: 300px;
+        /* Set a background color */
+        background-color: #E3E6F3;
+        /* Add a shadow to the navbar */
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        /* Add padding at the top and left for spacing */
+        padding: 80px 0 0 10px;
+        /* Adds a smooth transition effect to the element, with a duration of 0.3 seconds */
+        transition: 0.3s;
+    }
+    #navbar.active {
+        right: 0px;
+    }
+    /* Style for list items in the navbar */
+    #navbar li {
+        /* Add margin at the bottom of each list item */
+        margin-bottom: 25px;
+    }
+    /* Display the #mobile element on small screens */
+    #mobile {
+        /* Display as a flex container */
+        display: flex;
+        /* Align items (icons) to the center */
+        align-items: center;
+    }
+    /* Style for icons inside the #mobile element */
+    #mobile i {
+        /* Set the icon color */
+        color: #1a1a1a;
+        /* Set the font size of the icons */
+        font-size: 24px;
+        /* Add padding to the left for spacing between icons */
+        padding-left: 20px;
+    }
+    #close {
+        /* Displays the #close element using the default display behavior for its type */
+        display: initial;
+        /* Positions the #close element absolutely relative to its nearest positioned ancestor */
+        position: absolute;
+        /* Places the #close element 30px from the top of its containing block */
+        top: 30px;
+        /* Places the #close element 30px from the left of its containing block */
+        left: 30px;
+        /* Sets the text color of the #close element to a dark shade (#222) */
+        color: #222;
+        /* Sets the font size of the #close element to 24px */
+        font-size: 24px;
+    }
+    #lg-bag {
+        /* Hides the #lg-bag element */
+        display: none;
+    }
+    #disp {
+        /* Sets the height of the #disp element to 70% of the viewport height */
+        height: 70vh;
+        /* Adds no padding to the top and bottom, and 80px padding on the left and right */
+        padding: 0 80px;
+        /* Positions the background image 30% down from the top and 30% from the right */
+        background-position: top 30% right 30%;
+    }
+    #feature {
+        /* Centers the content of the #feature element horizontally */
+        justify-content: center;
+    }
+    #feature .fe-box {
+        /* Adds 15px margin to all sides of each .fe-box inside #feature */
+        margin: 15px 15px;
+    }
+    #product1 .pro-container {
+        /* Centers the content of the .pro-container inside #product1 */
+        justify-content: center;
+    }
+    #product1 .pro {
+        /* Adds 15px margin to all sides of each .pro element inside #product1 */
+        margin: 15px 15px;
+    }
+    #banner {
+        /* Sets the height of the #banner element to 17% of the viewport height */
+        height: 17vh;
+    }
+    #sm-banner .banner-box {
+        /* Ensures that each .banner-box inside #sm-banner takes up 100% of its container's width */
+        min-width: 100%;
+        /* Sets the height of each .banner-box to 30% of the viewport height */
+        height: 30vh;
+    }
+    #banner3 {
+        /* Adds 40px padding to the left and right of the #banner3 element */
+        padding: 0 40px;
+    }
+    #banner3 .banner-box {
+        /* Sets the width of each .banner-box inside #banner3 to 28% of its container */
+        width: 28%;
+    }
+    #newsletter .form {
+        /* Sets the width of the .form inside #newsletter to 70% of its container */
+        width: 70%;
+    }
+}
+
+
+/*Responsiveness for small screen devices such as mobile phones*/
+
+@media (max-width: 477px) {
+    /* Adjust padding for the .section-p1 on small screens */
+    .section-p1 {
+        padding: 20px;
+    }
+    /* Reduce padding for the #header on small screens */
+    #header {
+        padding: 8px 30px;
+    }
+    /* Adjust font size for h1 on small screens */
+    h1 {
+        font-size: 28px;
+    }
+    /* Adjust font size for h2 on small screens */
+    h2 {
+        font-size: 22px;
+    }
+    /* Reduce padding and adjust background position for #disp on small screens */
+    #disp {
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    /* Align items with space-between inside #feature */
+    #feature {
+        justify-content: space-between;
+    }
+    /* Set a specific width and margin for each .fe-box in #feature on small screens */
+    #feature .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+    /* Make each .pro in #product1 take up full width on small screens */
+    #product1 .pro {
+        width: 100%;
+    }
+    /* Adjust the height of the #banner on small screens */
+    #banner {
+        height: 34vh;
+    }
+    /* Adjust the height of each .banner-box in #sm-banner on small screens */
+    #sm-banner .banner-box {
+        height: 40vh;
+    }
+    /* Add margin-top to .banner-box2 in #sm-banner on small screens */
+    #sm-banner .banner-box2 {
+        margin-top: 20px;
+    }
+    /* Reduce padding for #banner3 on small screens */
+    #banner3 {
+        padding: 0 20px;
+    }
+    /* Make each .banner-box in #banner3 take up full width on small screens */
+    #banner3 .banner-box {
+        width: 100%;
+    }
+    /* Adjust padding for the #newsletter section on small screens */
+    #newsletter {
+        padding: 40px 20px;
+    }
+    /* Make the form inside #newsletter take up full width on small screens */
+    #newsletter .form {
+        width: 100%;
+    }
+    /* Align footer copyright text to the start (left) on small screens */
+    footer .copyright {
+        text-align: start;
+    }
+}
