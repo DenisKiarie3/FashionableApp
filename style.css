@@ -1196,6 +1196,178 @@ footer .copyright {
 }
 
 
+/*Shop Page*/
+
+#shop-disp {
+    /* Sets a background image for the #shop-disp element */
+    background-image: url("images/banner/b6.jpg");
+    /* Sets the width to 100% of its parent container */
+    width: 100%;
+    /* Sets the height to 40% of the viewport height */
+    height: 40vh;
+    /* Ensures the background image covers the entire element */
+    background-size: cover;
+    /* Uses flexbox to arrange child elements */
+    display: flex;
+    /* Centers child elements horizontally */
+    justify-content: center;
+    /* Centers text content */
+    text-align: center;
+    /* Arranges child elements in a column */
+    flex-direction: column;
+    /* Adds 14px padding inside the element */
+    padding: 14px;
+}
+
+#pagination {
+    /* Centers the text and child elements within the #pagination section */
+    text-align: center;
+}
+
+#pagination a {
+    /* Removes the underline from links */
+    text-decoration: none;
+    /* Sets the background color of the links */
+    background-color: #FF1493;
+    /* Adds padding inside the links */
+    padding: 15px 20px;
+    /* Rounds the corners of the links */
+    border-radius: 4px;
+    /* Sets the text color to white */
+    color: #fff;
+    /* Makes the text bold */
+    font-weight: 600;
+}
+
+#pagination a i {
+    /* Sets the font size of the icon inside the links */
+    font-size: 16px;
+    /* Makes the icon text bold */
+    font-weight: 600;
+}
+
+
+/*Single Product*/
+
+
+/* Styling for the #prodetails section */
+
+#prodetails {
+    /* Flexbox layout with horizontal alignment */
+    display: flex;
+    /* Add a 20px margin at the top */
+    margin-top: 20px;
+}
+
+
+/* Styling for the product image section */
+
+#prodetails .single-pro-image {
+    /* Set image section width to 15% */
+    width: 15%;
+    /* Add a 50px margin to the right */
+    margin-right: 50px;
+}
+
+
+/* Styling for the small image group */
+
+.small-img-group {
+    /* Flexbox layout for evenly spaced small images */
+    display: flex;
+    /* Space between the small images */
+    justify-content: space-between;
+}
+
+
+/* Styling for each small image column */
+
+.small-img-col {
+    /* Set each image to take 24% of the available space */
+    flex-basis: 24%;
+    /* Cursor changes to pointer on hover */
+    cursor: pointer;
+}
+
+
+/* Styling for the product details section */
+
+#prodetails .single-pro-details {
+    /* Set details section width to 50% */
+    width: 50%;
+    /* Add 30px padding at the top */
+    padding-top: 30px;
+}
+
+
+/* Styling for the h4 heading in the details section */
+
+#prodetails .single-pro-details h4 {
+    /* Padding above and below the heading */
+    padding: 40px 0 20px 0;
+}
+
+
+/* Styling for the h2 heading (price) in the details section */
+
+#prodetails .single-pro-details h2 {
+    /* Set font size to 26px for the price */
+    font-size: 26px;
+}
+
+
+/* Styling for the select dropdown in the details section */
+
+#prodetails .single-pro-details select {
+    /* Block display, full width */
+    display: block;
+    /* Padding inside the dropdown */
+    padding: 5px 10px;
+    /* Margin at the bottom of the dropdown */
+    margin-bottom: 10px;
+}
+
+
+/* Styling for the quantity input box */
+
+#prodetails .single-pro-details input {
+    /* Set width and height for the input box */
+    width: 50px;
+    height: 47px;
+    /* Padding inside the input box */
+    padding-left: 10px;
+    /* Set the font size for input text */
+    font-size: 16px;
+    /* Margin to the right of the input box */
+    margin-right: 10px;
+}
+
+
+/* Remove outline when input box is focused */
+
+#prodetails .single-pro-details input:focus {
+    outline: none;
+}
+
+
+/* Styling for the Add to Cart button */
+
+#prodetails .single-pro-details button {
+    /* Set the background color to pink (#FF1493) */
+    background: #FF1493;
+    /* Set the button text color to white */
+    color: #fff;
+}
+
+
+/* Styling for the product details text */
+
+#prodetails .single-pro-details span {
+    /* Set line height for better readability */
+    line-height: 25px;
+}
+
+
 /*Start Media Query*/
 
 
@@ -1394,5 +1566,25 @@ footer .copyright {
     /* Align footer copyright text to the start (left) on small screens */
     footer .copyright {
         text-align: start;
+    }
+    /*Single Product */
+    /* Styling for the #prodetails section */
+    #prodetails {
+        /* Set the display to flex to enable flexible layout */
+        display: flex;
+        /* Arrange items in a vertical (column) layout */
+        flex-direction: column;
+    }
+    /* Styling for the product image section inside #prodetails */
+    #prodetails .single-pro-image {
+        /* Set width to 100% to make the image take up full width */
+        width: 100%;
+        /* Remove right margin to avoid spacing on the right side */
+        margin-right: 0px;
+    }
+    /* Styling for the product details section inside #prodetails */
+    #prodetails .single-pro-details {
+        /* Set width to 100% to make the details take up full width */
+        width: 100%;
     }
 }
