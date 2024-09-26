@@ -1368,6 +1368,133 @@ footer .copyright {
 }
 
 
+/*Blog Page*/
+
+
+/* Styling for the shop display with a blog header */
+
+#shop-disp.blog-header {
+    /* Set a background image for the blog header */
+    background-image: url("images/banner/b9.jpg");
+}
+
+
+/* Styling for the blog section */
+
+#blog {
+    /* Add padding: 150px on the top and sides, 0px at the bottom */
+    padding: 150px 150px 0 150px;
+}
+
+
+/* Styling for each blog box container */
+
+#blog .blog-box {
+    /* Flexbox layout with items aligned to the center */
+    display: flex;
+    align-items: center;
+    /* Full-width box and relative positioning */
+    width: 100%;
+    position: relative;
+    /* Add 90px padding at the bottom */
+    padding-bottom: 90px;
+}
+
+
+/* Styling for the blog image container */
+
+#blog .blog-img {
+    /* Set width of the image container to 50% */
+    width: 50%;
+    /* Add a 40px margin to the right */
+    margin-right: 40px;
+}
+
+
+/* General styling for blog images */
+
+#blog img {
+    /* Set image width to 100% and height to 300px */
+    width: 100%;
+    height: 300px;
+    /* Ensure the image covers its container */
+    object-fit: cover;
+}
+
+
+/* Styling for the blog details container */
+
+#blog .blog-details {
+    /* Set the width of the blog details to 50% */
+    width: 50%;
+}
+
+
+/* Styling for links inside blog details */
+
+#blog .blog-details a {
+    /* Remove underline from links */
+    text-decoration: none;
+    /* Set the font size to 11px, black color, and bold weight */
+    font-size: 11px;
+    color: #000;
+    font-weight: 700;
+    /* Position the link relative to the container */
+    position: relative;
+    /* Set a transition for hover effect */
+    transition: 0.3s;
+}
+
+
+/* Styling for the underline effect on links */
+
+#blog .blog-details a::after {
+    /* Create a line after the link text */
+    content: "";
+    width: 50px;
+    height: 1px;
+    /* Black line positioned 60px to the right of the link */
+    background-color: #000;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+}
+
+
+/* Change link color when hovered */
+
+#blog .blog-details a:hover {
+    /* Change the link color to pink on hover */
+    color: #FF1493;
+}
+
+
+/* Change the underline color when hovered */
+
+#blog .blog-details a:hover::after {
+    /* Change the underline to pink on hover */
+    background-color: #FF1493;
+}
+
+
+/* Styling for the large date header in blog boxes */
+
+#blog .blog-box h1 {
+    /* Position the header absolutely */
+    position: absolute;
+    /* Move it up 40px and to the left */
+    top: -40px;
+    left: 0;
+    /* Set the font size to 70px and bold weight */
+    font-size: 70px;
+    font-weight: 700;
+    /* Light gray color for the header */
+    color: #c9cbce;
+    /* Ensure the header appears below other elements */
+    z-index: -9;
+}
+
+
 /*Start Media Query*/
 
 
@@ -1585,6 +1712,33 @@ footer .copyright {
     /* Styling for the product details section inside #prodetails */
     #prodetails .single-pro-details {
         /* Set width to 100% to make the details take up full width */
+        width: 100%;
+    }
+    /*Blog Page*/
+    /* Styling for the blog section */
+    #blog {
+        /* Add padding: 100px on top, 20px on sides, 0px at the bottom */
+        padding: 100px 20px 0 20px;
+    }
+    /* Styling for the blog box container */
+    #blog .blog-box {
+        /* Flexbox layout with column direction */
+        display: flex;
+        /* Align items to the start (left) */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    /* Styling for the blog image container */
+    #blog .blog-img {
+        /* Set the width to 100% */
+        width: 100%;
+        /* Remove right margin and add a 30px bottom margin */
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    /* Styling for the blog details container */
+    #blog .blog-details {
+        /* Set the width of the blog details to 100% */
         width: 100%;
     }
 }
