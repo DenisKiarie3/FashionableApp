@@ -1495,6 +1495,89 @@ footer .copyright {
 }
 
 
+/*About Page*/
+
+
+/* Styling for the h2 element inside #shop-disp */
+
+#shop-disp h2 {
+    /* Set the text color to white */
+    color: #fff;
+}
+
+
+/* Styling for the p element inside #shop-disp */
+
+#shop-disp p {
+    /* Set the text color to white */
+    color: #fff;
+}
+
+
+/* Styling for the #shop-disp element with class about-header */
+
+#shop-disp.about-header {
+    /* Set the background image for the about section */
+    background-image: url("images/about/ab1.jpg");
+}
+
+
+/* Flexbox layout for the #about-head section */
+
+#about-head {
+    /* Display flex and align items to the center */
+    display: flex;
+    align-items: center;
+}
+
+
+/* Styling for the img element inside #about-head */
+
+#about-head img {
+    /* Set the image width to 50% and maintain auto height */
+    width: 50%;
+    height: auto;
+}
+
+
+/* Styling for div inside #about-head */
+
+#about-head div {
+    /* Add 40px padding to the left of the div */
+    padding-left: 40px;
+}
+
+
+/* Center-align text for the #about-app section */
+
+#about-app {
+    /* Center the text in this section */
+    text-align: center;
+}
+
+
+/* Styling for the .video class inside #about-app */
+
+#about-app .video {
+    /* Set width to 70% and height to 100% */
+    width: 70%;
+    height: 100%;
+    /* Center the video with 30px margin at the top */
+    margin: 30px auto 0 auto;
+}
+
+
+/* Styling for video elements inside .video class */
+
+#about-app .video video {
+    /* Set the video width and height to 100% */
+    width: 100%;
+    height: 100%;
+    /* Add a 20px border-radius around the video */
+    border-radius: 20px;
+}
+
+
 /*Start Media Query*/
 
 
@@ -1739,6 +1822,28 @@ footer .copyright {
     /* Styling for the blog details container */
     #blog .blog-details {
         /* Set the width of the blog details to 100% */
+        width: 100%;
+    }
+    /*About Page*/
+    /* Change flex direction to column for the #about-head section */
+    #about-head {
+        /* Stack elements vertically */
+        flex-direction: column;
+    }
+    /* Styling for the img element inside #about-head */
+    #about-head img {
+        /* Set image width to 100% and add 20px bottom margin */
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /* Remove left padding from div inside #about-head */
+    #about-head div {
+        /* Set left padding to 0 */
+        padding-left: 0px;
+    }
+    /* Styling for the .video class inside #about-app */
+    #about-app .video {
+        /* Set the width of the video container to 100% */
         width: 100%;
     }
 }
