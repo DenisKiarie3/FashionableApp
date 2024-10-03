@@ -1578,6 +1578,222 @@ footer .copyright {
 }
 
 
+/*Contact Page*/
+
+
+/* Contact details section layout */
+
+#contact-details {
+    /* Use flexbox for layout */
+    display: flex;
+    /* Align items vertically in the center */
+    align-items: center;
+    /* Space items evenly between the start and end */
+    justify-content: space-between;
+}
+
+
+/* Styling for the details section within contact details */
+
+#contact-details .details {
+    /* Set the width to 40% of the parent container */
+    width: 40%;
+}
+
+
+/* Font size for small text elements */
+
+#contact-details .details span,
+#form-details form span {
+    /* Font size set to 12px */
+    font-size: 12px;
+}
+
+
+/* Styling for section headings in contact and form details */
+
+#contact-details .details h2,
+#form-details form h2 {
+    /* Set font size to 26px */
+    font-size: 26px;
+    /* Line height for proper spacing */
+    line-height: 35px;
+    /* Add 20px padding above and below */
+    padding: 20px 0;
+}
+
+
+/* Styling for subheadings in contact details */
+
+#contact-details .details h3 {
+    /* Set font size to 16px */
+    font-size: 16px;
+    /* Padding below the subheading */
+    padding-bottom: 15px;
+}
+
+
+/* Styling for list items in contact details */
+
+#contact-details .details li {
+    /* Remove default list style */
+    list-style: none;
+    /* Display list items in a flex row */
+    display: flex;
+    /* Add padding between list items */
+    padding: 10px 0;
+}
+
+
+/* Icon styles inside list items */
+
+#contact-details .details li i {
+    /* Set icon size */
+    font-size: 14px;
+    /* Padding on the right to space the icon from the text */
+    padding-right: 22px;
+}
+
+
+/* Paragraph styles inside list items */
+
+#contact-details .details li p {
+    /* Remove margin from the paragraph */
+    margin: 0;
+    /* Set font size to 14px */
+    font-size: 14px;
+}
+
+
+/* Map container styles */
+
+#contact-details .map {
+    /* Set width to 55% of the container */
+    width: 55%;
+    /* Set height to 400px */
+    height: 400px;
+}
+
+
+/* Styles for the embedded Google map */
+
+#contact-details .map iframe {
+    /* Set iframe width to fill the parent container */
+    width: 100%;
+    /* Set iframe height to fill the parent container */
+    height: 100%;
+}
+
+
+/* Form details section layout */
+
+#form-details {
+    /* Use flexbox for layout */
+    display: flex;
+    /* Space items evenly between the start and end */
+    justify-content: space-between;
+    /* Margin of 30px around the section */
+    margin: 30px;
+    /* Padding inside the section */
+    padding: 80px;
+    /* Set a border around the form details */
+    border: 1px solid #e1e1e1;
+}
+
+
+/* Form layout within the form details */
+
+#form-details form {
+    /* Set form width to 65% */
+    width: 65%;
+    /* Flexbox layout for the form inputs */
+    display: flex;
+    /* Align items in a column */
+    flex-direction: column;
+    /* Align form items to the start */
+    align-items: flex-start;
+}
+
+
+/* Input and textarea styles inside the form */
+
+#form-details form input,
+#form-details form textarea {
+    /* Set input and textarea width to 100% */
+    width: 100%;
+    /* Padding inside the input and textarea */
+    padding: 12px 15px;
+    /* Remove outline */
+    outline: none;
+    /* Margin below each input */
+    margin-bottom: 20px;
+    /* Add a border to inputs */
+    border: 1px solid #e1e1e1;
+}
+
+
+/* Button styles in the form */
+
+#form-details form button {
+    /* Set button background color */
+    background-color: #FF1493;
+    /* Set button text color */
+    color: #fff;
+}
+
+
+/* People section layout in form details */
+
+#form-details .people div {
+    /* Padding at the bottom of each person entry */
+    padding-bottom: 25px;
+    /* Flexbox layout for the people */
+    display: flex;
+    /* Align items at the start */
+    align-items: flex-start;
+}
+
+
+/* Image styles inside the people section */
+
+#form-details .people div img {
+    /* Set image width to 65px */
+    width: 65px;
+    /* Set image height to 65px */
+    height: 65px;
+    /* Keep the image aspect ratio */
+    object-fit: cover;
+    /* Margin to the right of the image */
+    margin-right: 15px;
+}
+
+
+/* Paragraph styles in the people section */
+
+#form-details .people div p {
+    /* Remove margin from the paragraph */
+    margin: 0;
+    /* Set font size */
+    font-size: 13px;
+    /* Line height for better readability */
+    line-height: 25px;
+}
+
+
+/* Span styling in the people section */
+
+#form-details .people div p span {
+    /* Display span as a block element */
+    display: block;
+    /* Set span font size */
+    font-size: 16px;
+    /* Make span text bold */
+    font-weight: 600;
+    /* Set span text color */
+    color: #000;
+}
+
+
 /*Start Media Query*/
 
 
@@ -1704,6 +1920,17 @@ footer .copyright {
     #newsletter .form {
         /* Sets the width of the .form inside #newsletter to 70% of its container */
         width: 70%;
+    }
+    /*Contact Page*/
+    /* Form details section layout */
+    #form-details {
+        /* Add padding of 40px around the form details section */
+        padding: 40px;
+    }
+    /* Form layout inside form details */
+    #form-details form {
+        /* Set form width to 50% of the parent container */
+        width: 50%;
     }
 }
 
@@ -1845,5 +2072,39 @@ footer .copyright {
     #about-app .video {
         /* Set the width of the video container to 100% */
         width: 100%;
+    }
+    /*Contact Page*/
+    /* Contact details section layout */
+    #contact-details {
+        /* Set the flex direction to column for vertical alignment */
+        flex-direction: column;
+    }
+    /* Details section within contact details */
+    #contact-details .details {
+        /* Set width to 100% to occupy full width */
+        width: 100%;
+        /* Add a bottom margin of 30px for spacing */
+        margin-bottom: 30px;
+    }
+    /* Map section within contact details */
+    #contact-details .map {
+        /* Set width to 100% to occupy full width */
+        width: 100%;
+    }
+    /* Form details section layout */
+    #form-details {
+        /* Add a margin of 10px around the form details */
+        margin: 10px;
+        /* Add padding of 30px on top and bottom, 10px on left and right */
+        padding: 30px 10px;
+        /* Allow flex items to wrap to the next line if needed */
+        flex-wrap: wrap;
+    }
+    /* Form layout within form details */
+    #form-details form {
+        /* Set form width to 100% to occupy full width */
+        width: 100%;
+        /* Add a bottom margin of 30px for spacing */
+        margin-bottom: 30px;
     }
 }
