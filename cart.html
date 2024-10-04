@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!-- Specifies the document type and HTML version -->
+<html lang="en">
+<!-- Begins the HTML document with English language -->
+
+<head>
+    <!-- Meta tag specifying character set as UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Meta tag specifying compatibility mode for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Meta tag setting initial viewport scale for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage shown in the browser tab -->
+    <title>JAYS CLOSET TEST</title>
+    <!-- Link to Font Awesome CSS for including icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Link to an external CSS file for styling the webpage -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header section -->
+    <section id="header">
+        <!-- Logo linking to home page -->
+        <a href="#"><img src="images/logo7.png" class="logo" alt=""></a>
+        <div>
+            <!-- Navigation bar -->
+            <ul id="navbar">
+                <!-- Navigation links -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <!-- Mobile navigation container -->
+        <div id="mobile">
+            <!-- Link to the shopping cart page with a shopping bag icon -->
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <!-- Icon for the mobile menu (possibly a hamburger or side menu toggle) -->
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+
+    </section>
+
+    <!-- Display section with background image -->
+    <section id="shop-disp" class="about-header">
+
+        <!-- Subheading -->
+        <h2>#Communicado Oficial</h2>
+
+        <!-- Main headline -->
+        <p>CONTACT US! We'd love to hear from you.</p>
+    </section>
+
+    <!--Cart container section-->
+    <section id="cart" class="section-p1">
+
+        <!-- Table element with 100% width -->
+        <table width="100%">
+
+            <!-- Table header -->
+            <thead>
+                <tr>
+                    <!-- Column for remove button -->
+                    <td>Remove</td>
+                    <!-- Column for product image -->
+                    <td>Image</td>
+                    <!-- Column for product name -->
+                    <td>Product</td>
+                    <!-- Column for product price -->
+                    <td>Price</td>
+                    <!-- Column for quantity input -->
+                    <td>Quantity</td>
+                    <!-- Column for product subtotal -->
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+
+            <!-- Table body -->
+            <tbody>
+                <!-- First product row -->
+                <tr>
+                    <!-- Remove button with an icon -->
+                    <td><a href="#"><i class="fa-solid fa-times-circle"></i></a></td>
+                    <!-- Product image -->
+                    <td><img src="images/products/p1.jpg" alt=""></td>
+                    <!-- Product name -->
+                    <td>Silk Dress</td>
+                    <!-- Product price -->
+                    <td>$78</td>
+                    <!-- Quantity input field -->
+                    <td><input type="number" value="1"></td>
+                    <!-- Subtotal for the product -->
+                    <td>$78</td>
+                </tr>
+
+                <!-- Second product row (similar to the first row) -->
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-times-circle"></i></a></td>
+                    <td><img src="images/products/p1.jpg" alt=""></td>
+                    <td>Silk Dress</td>
+                    <td>$78</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$78</td>
+                </tr>
+
+                <!-- Third product row (similar to the previous rows) -->
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-times-circle"></i></a></td>
+                    <td><img src="images/products/p1.jpg" alt=""></td>
+                    <td>Silk Dress</td>
+                    <td>$78</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$78</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!--Cart add container section-->
+    <section id="cart-add" class="section-p1">
+
+        <!-- Coupon application area -->
+        <div id="coupon">
+            <!-- Heading for the coupon section -->
+            <h3>Apply Coupon</h3>
+
+            <!-- Container for input and apply button -->
+            <div>
+                <!-- Input field for entering the coupon code -->
+                <input type="text" placeholder="Enter Your Coupon">
+                <!-- Apply button -->
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+
+        <!-- Subtotal and cart totals section -->
+        <div id="subtotal">
+            <!-- Heading for the cart totals section -->
+            <h3>Cart Totals</h3>
+
+            <!-- Table for displaying cart subtotal, shipping, and total -->
+            <table>
+                <!-- Row for cart subtotal -->
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <!-- Display the subtotal amount -->
+                    <td>$ 234</td>
+                </tr>
+
+                <!-- Row for shipping cost -->
+                <tr>
+                    <td>Shipping</td>
+                    <!-- Display free shipping text -->
+                    <td>Free</td>
+                </tr>
+
+                <!-- Row for total cost -->
+                <tr>
+                    <!-- Bold text for the total label -->
+                    <td><strong>Total</strong></td>
+                    <!-- Bold text for the total amount -->
+                    <td><strong>$ 234</strong></td>
+                </tr>
+            </table>
+
+            <!-- Button to proceed to checkout -->
+            <button class="normal">Proceed to checkout</button>
+        </div>
+    </section>
+
+    <!--Footer section-->
+    <footer class="section-p1">
+        <!-- Column container for contact details -->
+        <div class="col">
+            <!-- Displays the logo image -->
+            <img class="logo" src="images/logo7.png" alt="">
+            <!-- Heading for contact information -->
+            <h4>Contact</h4>
+            <!-- Address line with bold "Address:" label -->
+            <p><strong>Address:</strong> Kiambu, RidgeWays</p>
+            <!-- Phone number line with bold "Phone:" label -->
+            <p><strong>Phone:</strong> +254721715137</p>
+            <!-- Business hours line with bold "Hours:" label -->
+            <p><strong>Hours:</strong> 8:00am - 6:00pm</p>
+
+            <!-- Container for social media follow section -->
+            <div class="follow">
+                <!-- Heading for social media links -->
+                <h4>Follow Us</h4>
+                <!-- Container for social media icons -->
+                <div class="icon">
+                    <!-- Facebook icon -->
+                    <i class="fab fa-facebook-f"></i>
+                    <!-- Twitter icon -->
+                    <i class="fab fa-twitter"></i>
+                    <!-- Instagram icon -->
+                    <i class="fab fa-instagram"></i>
+                    <!-- YouTube icon -->
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Column container for "About" section links -->
+        <div class="col">
+            <!-- Heading for the "About" section -->
+            <h4>About</h4>
+            <!-- Link to "About Us" page -->
+            <a href="#">About Us</a>
+            <!-- Link to "Delivery Information" page -->
+            <a href="#">Delivery Information</a>
+            <!-- Link to "Privacy Policy" page -->
+            <a href="#">Privacy Policy</a>
+            <!-- Link to "Terms & Conditions" page -->
+            <a href="#">Terms & Conditions</a>
+            <!-- Link to "Contact Us" page -->
+            <a href="#">Contact Us</a>
+        </div>
+
+
+        <!-- Column container for "My Account" section links -->
+        <div class="col">
+            <!-- Heading for the "My Account" section -->
+            <h4>My Account</h4>
+            <!-- Link to "Sign In" page -->
+            <a href="#">Sign In</a>
+            <!-- Link to "View Cart" page -->
+            <a href="#">View Cart</a>
+            <!-- Link to "My Wishlist" page -->
+            <a href="#">My Wishlist</a>
+            <!-- Link to "Track My Order" page -->
+            <a href="#">Track My Order</a>
+            <!-- Link to "Help" page -->
+            <a href="#">Help</a>
+        </div>
+
+
+        <!-- Column container for "Install App" section -->
+        <div class="col install">
+            <!-- Heading for the "Install App" section -->
+            <h4>Install App</h4>
+            <!-- Short description about app availability -->
+            <p>From App Store or Google Play</p>
+
+            <!-- Row container for app store images -->
+            <div class="row">
+                <!-- Image for App Store link -->
+                <img src="images/pay/app.jpg" alt="">
+                <!-- Image for Google Play link -->
+                <img src="images/pay/play.jpg" alt="">
+            </div>
+
+            <!-- Text for secured payment gateways -->
+            <p>Secured Payment Gateways</p>
+
+            <!-- Image showcasing various payment methods -->
+            <img src="images/pay/pay.png" alt="">
+        </div>
+
+
+        <!-- Container for the copyright information -->
+        <div class="copyright">
+            <!-- Copyright notice with year and company name -->
+            <p>c 2024, JAYS-CLOSET</p>
+        </div>
+
+
+    </footer>
+
+
+
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
