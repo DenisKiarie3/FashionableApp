@@ -1794,6 +1794,233 @@ footer .copyright {
 }
 
 
+/*Cart Page*/
+
+
+/* Cart container with horizontal scrolling */
+
+#cart {
+    /* Enable horizontal scrolling if content overflows */
+    overflow-x: auto;
+}
+
+
+/* Styling for the table inside the cart */
+
+#cart table {
+    /* Set the table width to 100% */
+    width: 100%;
+    /* Collapse borders into a single line */
+    border-collapse: collapse;
+    /* Ensure table has a fixed layout for uniformity */
+    table-layout: fixed;
+    /* Prevent text wrapping inside table cells */
+    white-space: nowrap;
+}
+
+
+/* Set width for product images in the table */
+
+#cart table img {
+    /* Fixed width for product images */
+    width: 50px;
+}
+
+
+/* Styling for the first column of the table */
+
+#cart table td:nth-child(1) {
+    /* Set a width of 100px for the first column */
+    width: 100px;
+    /* Center align text within the first column */
+    text-align: center;
+}
+
+
+/* Styling for the second column of the table */
+
+#cart table td:nth-child(2) {
+    /* Set a width of 150px for the second column */
+    width: 150px;
+    /* Center align text within the second column */
+    text-align: center;
+}
+
+
+/* Styling for the third column of the table */
+
+#cart table td:nth-child(3) {
+    /* Set a width of 250px for the third column */
+    width: 250px;
+    /* Center align text within the third column */
+    text-align: center;
+}
+
+
+/* Styling for the fourth, fifth, and sixth columns */
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+    /* Set a width of 150px for the fourth, fifth, and sixth columns */
+    width: 150px;
+    /* Center align text within these columns */
+    text-align: center;
+}
+
+
+/* Styling for the input field in the fifth column */
+
+#cart table td:nth-child(5) input {
+    /* Set the width of the input field */
+    width: 70px;
+    /* Apply padding inside the input field */
+    padding: 10px 5px 10px 15px;
+}
+
+
+/* Styling for the table header */
+
+#cart table thead {
+    /* Set a border for the header row */
+    border: 1px solid #e2e9e1;
+    /* Remove the left border */
+    border-left: none;
+    /* Remove the right border */
+    border-right: none;
+}
+
+
+/* Styling for table header cells */
+
+#cart table thead td {
+    /* Make the font bold */
+    font-weight: 700;
+    /* Transform text to uppercase */
+    text-transform: uppercase;
+    /* Set the font size */
+    font-size: 13px;
+    /* Apply padding inside header cells */
+    padding: 18px 0;
+}
+
+
+/* Add padding to the top of each table body row */
+
+#cart table tbody tr td {
+    /* Padding at the top of the table rows */
+    padding-top: 15px;
+}
+
+
+/* Styling for table body cells */
+
+#cart table tbody td {
+    /* Set the font size for table body cells */
+    font-size: 13px;
+}
+
+
+/* Flexbox layout for cart-add section */
+
+#cart-add {
+    /* Use flexbox layout */
+    display: flex;
+    /* Allow items to wrap to the next row */
+    flex-wrap: wrap;
+    /* Distribute items with space in between */
+    justify-content: space-between;
+}
+
+
+/* Styling for the coupon section */
+
+#coupon {
+    /* Set the width for the coupon section */
+    width: 50%;
+    /* Add bottom margin to the coupon section */
+    margin-bottom: 30px;
+}
+
+
+/* Styling for headings in coupon and subtotal sections */
+
+#coupon h3,
+#subtotal h3 {
+    /* Add bottom padding to the headings */
+    padding-bottom: 15px;
+}
+
+
+/* Styling for the coupon input field */
+
+#coupon input {
+    /* Apply padding inside the input field */
+    padding: 10px 20px;
+    /* Remove the outline when focused */
+    outline: none;
+    /* Set the width of the input field */
+    width: 60%;
+    /* Add margin to the right of the input */
+    margin-right: 10px;
+    /* Set the border of the input field */
+    border: 1px solid #e2e9e1;
+}
+
+
+/* Styling for the buttons in coupon and subtotal sections */
+
+#coupon button,
+#subtotal button {
+    /* Set the background color for buttons */
+    background-color: #FF1493;
+    /* Set the text color to white */
+    color: #fff;
+    /* Apply padding inside the buttons */
+    padding: 12px 20px;
+}
+
+
+/* Styling for the subtotal section */
+
+#subtotal {
+    /* Set the width of the subtotal section */
+    width: 50%;
+    /* Add bottom margin to the subtotal section */
+    margin-bottom: 30px;
+    /* Set a border for the subtotal section */
+    border: 1px solid #e2e9e1;
+    /* Add padding inside the subtotal section */
+    padding: 30px;
+}
+
+
+/* Styling for the subtotal table */
+
+#subtotal table {
+    /* Collapse borders for the table */
+    border-collapse: collapse;
+    /* Set the width of the table */
+    width: 100%;
+    /* Add bottom margin to the table */
+    margin-bottom: 20px;
+}
+
+
+/* Styling for the subtotal table cells */
+
+#subtotal table td {
+    /* Set the width of the cells */
+    width: 50%;
+    /* Set a border for the cells */
+    border: 1px solid #e2e9e1;
+    /* Apply padding inside the cells */
+    padding: 10px;
+    /* Set the font size of the cell content */
+    font-size: 13px;
+}
+
+
 /*Start Media Query*/
 
 
@@ -2106,5 +2333,23 @@ footer .copyright {
         width: 100%;
         /* Add a bottom margin of 30px for spacing */
         margin-bottom: 30px;
+    }
+    /*Cart Page*/
+    /* Cart-add section layout as a column */
+    #cart-add {
+        /* Set flex direction to column for vertical alignment */
+        flex-direction: column;
+    }
+    /* Full width for the coupon section */
+    #coupon {
+        /* Set the coupon section width to 100% */
+        width: 100%;
+    }
+    /* Full width for the subtotal section */
+    #subtotal {
+        /* Set the subtotal section width to 100% */
+        width: 100%;
+        /* Add padding inside the subtotal section */
+        padding: 20px;
     }
 }
