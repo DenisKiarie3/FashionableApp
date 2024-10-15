@@ -222,6 +222,215 @@ body {
 }
 
 
+/*Sign Up Page Styling*/
+
+
+/* Signup section container */
+
+.signup {
+    /* Set full width */
+    width: 100%;
+    /* Set full viewport height */
+    height: 100vh;
+    /* Apply a linear gradient over the background image */
+    background-image: linear-gradient(rgba(0, 0, 50, 0.8), rgba(0, 0, 50, 0.8)), url(images/signup/sg1.jpg);
+    /* Center the background image */
+    background-position: center;
+    /* Cover the entire container with the background image */
+    background-size: cover;
+    /* Set the position to relative */
+    position: relative;
+}
+
+
+/* Form box container */
+
+.form-box {
+    /* Set 90% width of the container */
+    width: 90%;
+    /* Set a maximum width of 450px */
+    max-width: 450px;
+    /* Position the form box absolutely */
+    position: absolute;
+    /* Center the form box vertically */
+    top: 50%;
+    /* Center the form box horizontally */
+    left: 50%;
+    /* Translate the box to center */
+    transform: translate(-50%, -50%);
+    /* Transparent background for the form box */
+    background: transparent;
+    /* Padding inside the form box */
+    padding: 50px 60px 70px;
+    /* Center text alignment */
+    text-align: center;
+}
+
+
+/* Form box heading styling */
+
+.form-box h1 {
+    /* Set font size for the heading */
+    font-size: 30px;
+    /* Set bottom margin */
+    margin-bottom: 60px;
+    /* Set text color */
+    color: #FF1493;
+    /* Position the heading relative */
+    position: relative;
+}
+
+
+/* Add a decorative line under the heading */
+
+.form-box h1::after {
+    /* Add empty content */
+    content: '';
+    /* Set width of the decorative line */
+    width: 30px;
+    /* Set height of the decorative line */
+    height: 4px;
+    /* Round the corners */
+    border-radius: 3px;
+    /* Set the color of the line */
+    background: #FF1493;
+    /* Position the line absolutely */
+    position: absolute;
+    /* Place the line under the heading */
+    bottom: -12px;
+    /* Center the line */
+    left: 50%;
+    /* Translate the line to align perfectly */
+    transform: translateX(-50%);
+}
+
+
+/* Input field container styling */
+
+.input-field {
+    /* Set background color for the input field */
+    background: #eaeaea;
+    /* Set margin around the input field */
+    margin: 15px 0;
+    /* Round the corners */
+    border-radius: 3px;
+    /* Use flexbox for layout */
+    display: flex;
+    /* Align items vertically */
+    align-items: center;
+    /* Set the maximum height */
+    max-height: 65px;
+    /* Add a transition for height changes */
+    transition: max-height 0.5s;
+    /* Hide overflowing content */
+    overflow: hidden;
+}
+
+
+/* Input element styling */
+
+.input-field input {
+    /* Set the width to 100% */
+    width: 100%;
+    /* Make the background transparent */
+    background: transparent;
+    /* Remove borders */
+    border: 0;
+    /* Remove outline */
+    outline: 0;
+    /* Add padding inside the input */
+    padding: 18px 15px;
+}
+
+
+/* Icon inside the input field */
+
+.input-field i {
+    /* Add margin to the left of the icon */
+    margin-left: 15px;
+    /* Set the icon color */
+    color: #999;
+}
+
+
+/* Styling for the paragraph in the input group */
+
+.input-group p {
+    /* Align text to the left */
+    text-align: left;
+    /* Set the font size */
+    font-size: 13px;
+    /* Set the text color */
+    color: #eaeaea;
+}
+
+
+/* Styling for the link inside the paragraph */
+
+.input-group p a {
+    /* Remove underline from the link */
+    text-decoration: none;
+    /* Set the color for the link */
+    color: #FF1493;
+}
+
+
+/* Button field container styling */
+
+.btn-field {
+    /* Set full width for the button field */
+    width: 100%;
+    /* Use flexbox layout */
+    display: flex;
+    /* Space buttons evenly */
+    justify-content: space-between;
+}
+
+
+/* Button styling */
+
+.btn-field button {
+    /* Set each button to take 48% of the container width */
+    flex-basis: 48%;
+    /* Set the background color */
+    background: #FF1493;
+    /* Set the text color */
+    color: #fff;
+    /* Set the height of the buttons */
+    height: 40px;
+    /* Round the button corners */
+    border-radius: 20px;
+    /* Remove borders */
+    border: 0;
+    /* Remove outline */
+    outline: 0;
+    /* Set the cursor to pointer */
+    cursor: pointer;
+    /* Add a transition effect for background color changes */
+    transition: background 1s;
+    /* Set the font size */
+    font-size: 14px;
+}
+
+
+/* Input group container height */
+
+.input-group {
+    /* Set the height of the input group */
+    height: 280px;
+}
+
+
+/* Styling for disabled buttons */
+
+.btn-field button.disable {
+    /* Set the background color to light gray for disabled state */
+    background: #eaeaea;
+    /* Set the text color for disabled state */
+    color: #555;
+}
+
+
 /* Header styling - flex container with padding and background color */
 
 
@@ -1094,7 +1303,7 @@ body {
 }
 
 #newsletter button {
-    background-color: #088178;
+    background-color: #FF1493;
     /* Sets the background color of the button to a teal shade (#088178) */
     color: #fff;
     /* Sets the text color of the button to white (#fff) */
