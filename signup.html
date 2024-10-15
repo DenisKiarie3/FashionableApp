@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- Specifies the document type and HTML version -->
+<html lang="en">
+<!-- Begins the HTML document with English language -->
+
+<head>
+    <!-- Meta tag specifying character set as UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Meta tag specifying compatibility mode for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Meta tag setting initial viewport scale for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage shown in the browser tab -->
+    <title>JAYS CLOSET TEST</title>
+    <!-- Link to Font Awesome CSS for including icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Link to an external CSS file for styling the webpage -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Signup form container -->
+    <div class="signup">
+
+        <!-- Form box containing the form elements -->
+        <div class="form-box">
+
+            <!-- Form title for the signup page -->
+            <h1 id="title">Sign Up</h1>
+
+            <!-- Form for user input fields -->
+            <form>
+
+                <!-- Input group containing all form fields -->
+                <div class="input-group">
+
+                    <!-- Input field for the user's name -->
+                    <div class="input-field" id="nameField">
+                        <!-- User icon before the input -->
+                        <i class="fa-solid fa-user"></i>
+                        <!-- Input box for the user's name -->
+                        <input type="text" placeholder="Name">
+                    </div>
+
+                    <!-- Input field for the user's email -->
+                    <div class="input-field">
+                        <!-- Email icon before the input -->
+                        <i class="fa-solid fa-envelope"></i>
+                        <!-- Input box for the user's email -->
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <!-- Input field for the user's password -->
+                    <div class="input-field">
+                        <!-- Lock icon before the input -->
+                        <i class="fa-solid fa-lock"></i>
+                        <!-- Input box for the user's password -->
+                        <input type="password" placeholder="Password">
+                    </div>
+
+                    <!-- Lost password message with a clickable link -->
+                    <p>Lost Password <a href="">Click Here!</a></p>
+                </div>
+
+                <!-- Button field containing the signup and signin buttons -->
+                <div class="btn-field">
+                    <!-- Signup button -->
+                    <button type="button" id="signupBtn">Sign up</button>
+                    <!-- Signin button (disabled by default) -->
+                    <button type="button" id="signinBtn" class="disable">Sign in</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Script for the sign up page -->
+    <script>
+        // Get the signup button by its ID
+        let signupBtn = document.getElementById("signupBtn");
+
+        // Get the signin button by its ID
+        let signinBtn = document.getElementById("signinBtn");
+
+        // Get the name input field container by its ID
+        let nameField = document.getElementById("nameField");
+
+        // Get the form title by its ID
+        let title = document.getElementById("title");
+
+        // When the signin button is clicked
+        signinBtn.onclick = function() {
+            // Set the maximum height of the name field to 0 (hides it)
+            nameField.style.maxHeight = "0";
+            // Change the title text to "Sign In"
+            title.innerHTML = "Sign In";
+            // Disable the signup button
+            signupBtn.classList.add("disable");
+            // Enable the signin button by removing the disable class
+            signinBtn.classList.remove("disable");
+        }
+
+        // When the signup button is clicked
+        signupBtn.onclick = function() {
+            // Set the maximum height of the name field to 60px (shows it)
+            nameField.style.maxHeight = "60px";
+            // Change the title text to "Sign Up"
+            title.innerHTML = "Sign Up";
+            // Enable the signup button by removing the disable class
+            signupBtn.classList.remove("disable");
+            // Disable the signin button
+            signinBtn.classList.add("disable");
+        }
+    </script>
+</body>
+
+</html>
